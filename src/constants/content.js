@@ -1,6 +1,9 @@
 export const WHATSAPP_NUMBER = '+77009240000'
 export const PHONE_NUMBER = '+77009240000'
 export const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xwkgvnzp'
+export const INSTAGRAM_URL = 'https://www.instagram.com/RsSnabService'
+export const COMPANY_SITE_URL = 'https://rssnab.tilda.ws'
+export const TWO_GIS_URL = 'https://2gis.kz/astana/search/RS%20Snab%20Service'
 
 export const ru = {
   nav: {
@@ -13,7 +16,7 @@ export const ru = {
   },
   hero: {
     title: 'Профессиональный ремонт помещений в Астане',
-    subtitle: 'Фиксированная стоимость и 150+ положительных отзывов',
+    subtitle: 'Фиксированная стоимость в договоре и 138 реальных отзывов в 2ГИС',
     description:
       'Мы предлагаем полный спектр ремонтных работ: от косметического ремонта до капитальной отделки. Гарантируем качество и соблюдение сроков.',
     ctaWhatsapp: 'Написать в WhatsApp',
@@ -21,11 +24,41 @@ export const ru = {
     badge: 'Астана, Казахстан',
   },
   stats: [
-    { value: '4.6', label: 'Рейтинг', suffix: '★' },
+    { value: '4.6', label: 'Рейтинг 2ГИС', suffix: '★' },
     { value: '138+', label: 'Отзывов', suffix: '' },
     { value: '150+', label: 'Проектов', suffix: '' },
     { value: '7+', label: 'Лет опыта', suffix: '' },
   ],
+  trust: {
+    badge: 'Социальное доказательство',
+    title: 'Клиенты видят наш результат в 2ГИС',
+    subtitle:
+      'Прозрачная репутация, реальные оценки и фото объектов. Мы открыто показываем качество работ до звонка и встречи.',
+    cta: 'Смотреть профиль в 2ГИС',
+    cards: [
+      {
+        id: 1,
+        value: '4.6',
+        suffix: '★',
+        label: 'Средняя оценка',
+        note: '151 оценка клиентов',
+      },
+      {
+        id: 2,
+        value: '138',
+        suffix: '',
+        label: 'Подробных отзывов',
+        note: 'С реальным опытом работ',
+      },
+      {
+        id: 3,
+        value: '68',
+        suffix: '',
+        label: 'Фотографий объектов',
+        note: 'До, в процессе и после ремонта',
+      },
+    ],
+  },
   services: {
     title: 'Наши услуги',
     subtitle: 'Полный цикл ремонтных и отделочных работ',
@@ -136,6 +169,15 @@ export const ru = {
       },
     ],
   },
+  promo: {
+    badge: 'Скоро открытие',
+    title: 'Открываем новый офис в Астане',
+    subtitle:
+      'Приходите в офис: вращайте барабан и выигрывайте подарки для ремонта. Оставьте заявку, чтобы получить приглашение первыми.',
+    ctaPrimary: 'Записаться на открытие',
+    ctaSecondary: 'Написать в WhatsApp',
+    chips: ['Фиксируем стоимость в договоре', 'Технология K-FLEX', 'Подарки и спецусловия'],
+  },
   contact: {
     title: 'Связаться с нами',
     subtitle: 'Оставьте заявку и мы свяжемся с вами в течение 30 минут',
@@ -152,8 +194,10 @@ export const ru = {
     orWhatsapp: 'Или напишите нам в WhatsApp',
     whatsappBtn: 'Открыть WhatsApp',
     phone: 'Телефон',
+    instagram: 'Instagram',
+    website: 'Сайт компании',
     address: 'Адрес',
-    addressValue: 'Астана, Казахстан',
+    addressValue: 'Астана, Казахстан (новый офис скоро откроется)',
   },
   footer: {
     tagline: 'Профессиональный ремонт помещений в Астане',

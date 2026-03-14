@@ -1,7 +1,23 @@
 import { useState, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Send, MessageCircle, Phone, MapPin, CheckCircle, AlertCircle } from 'lucide-react'
-import { ru, WHATSAPP_NUMBER, PHONE_NUMBER, FORMSPREE_ENDPOINT } from '../constants/content'
+import {
+  Send,
+  MessageCircle,
+  Phone,
+  MapPin,
+  CheckCircle,
+  AlertCircle,
+  Instagram,
+  Globe,
+} from 'lucide-react'
+import {
+  ru,
+  WHATSAPP_NUMBER,
+  PHONE_NUMBER,
+  FORMSPREE_ENDPOINT,
+  INSTAGRAM_URL,
+  COMPANY_SITE_URL,
+} from '../constants/content'
 
 export default function Contact() {
   const ref = useRef(null)
@@ -184,6 +200,28 @@ export default function Contact() {
                 <p className="text-gray-400 text-sm mb-1">{ru.contact.address}</p>
                 <p className="text-white font-semibold">{ru.contact.addressValue}</p>
               </div>
+            </div>
+
+            {/* Social links */}
+            <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-slate-700/60 hover:bg-slate-700 text-slate-200 hover:text-white rounded-xl px-4 py-3 transition-colors duration-200"
+              >
+                <Instagram className="w-4 h-4" />
+                <span className="text-sm font-medium">{ru.contact.instagram}</span>
+              </a>
+              <a
+                href={COMPANY_SITE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-slate-700/60 hover:bg-slate-700 text-slate-200 hover:text-white rounded-xl px-4 py-3 transition-colors duration-200"
+              >
+                <Globe className="w-4 h-4" />
+                <span className="text-sm font-medium">{ru.contact.website}</span>
+              </a>
             </div>
           </motion.div>
         </div>

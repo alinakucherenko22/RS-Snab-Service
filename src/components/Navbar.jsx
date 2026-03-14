@@ -14,8 +14,10 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
+    { href: '#trust', label: 'Рейтинг' },
     { href: '#services', label: ru.nav.services },
     { href: '#portfolio', label: ru.nav.portfolio },
+    { href: '#promo', label: 'Акции' },
     { href: '#process', label: ru.nav.process },
     { href: '#contact', label: ru.nav.contact },
   ]

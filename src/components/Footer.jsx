@@ -6,8 +6,10 @@ export default function Footer() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, '')}`
 
   const navLinks = [
+    { href: '#trust', label: 'Рейтинг 2ГИС' },
     { href: '#services', label: ru.nav.services },
     { href: '#portfolio', label: ru.nav.portfolio },
+    { href: '#promo', label: 'Акция открытия' },
     { href: '#process', label: ru.nav.process },
     { href: '#contact', label: ru.nav.contact },
   ]
