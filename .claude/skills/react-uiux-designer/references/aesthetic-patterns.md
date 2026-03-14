@@ -1,3 +1,4 @@
+© RS-Snab-Service, 2026
 # Aesthetic Patterns — Tailwind + React Recipes
 
 Quick reference for implementing each aesthetic direction from the skill.
