@@ -201,7 +201,7 @@ export const ru = {
   },
   footer: {
     tagline: 'Профессиональный ремонт помещений в Астане',
-    rights: '© 2024 RS Snab Service. Все права защищены.',
+    rights: '© 2026 RS Snab Service. Все права защищены.',
     navHeading: 'Навигация',
     contactHeading: 'Контакты',
   },
@@ -232,6 +232,6 @@ export const kz = {
   ],
   footer: {
     tagline: 'Астанадағы кәсіби үй-жай жөндеу',
-    rights: '© 2024 RS Snab Service. Барлық құқықтар қорғалған.',
+    rights: '© 2026 RS Snab Service. Барлық құқықтар қорғалған.',
   },
 }
