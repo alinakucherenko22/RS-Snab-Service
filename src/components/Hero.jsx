@@ -49,23 +49,14 @@ export default function Hero() {
             {ru.hero.title.split(' ').slice(4).join(' ')}
           </motion.h1>
 
-          {/* Subtitle */}
+          {/* Subtitle only */}
           <motion.p
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease }}
-            className="text-xl sm:text-2xl text-orange-400 font-semibold mb-4"
+            className="text-xl sm:text-2xl text-orange-400 font-semibold mb-8"
           >
             {ru.hero.subtitle}
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3, ease }}
-            className="text-gray-400 text-lg mb-10 max-w-xl"
-          >
-            {ru.hero.description}
           </motion.p>
 
           {/* CTA Buttons */}
@@ -104,18 +95,15 @@ export default function Hero() {
             style={{ background: 'radial-gradient(ellipse at 60% 50%, rgba(249,115,22,0.18) 0%, rgba(15,23,42,0) 70%)' }}
           />
 
-          {/* 3-D card: perspective tilt + deep shadow */}
+          {/* 3-D card: no hover animation */}
           <motion.div
             initial={prefersReduced ? { opacity: 0 } : { opacity: 0, x: 80, rotateY: -20 }}
             animate={prefersReduced ? { opacity: 1 } : { opacity: 1, x: 0, rotateY: 0 }}
             transition={{ duration: 0.9, delay: 0.25, ease }}
             style={{ perspective: '1400px', transformStyle: 'preserve-3d' }}
-            /* Negative left margin bleeds image into the text column */
             className="relative w-full max-w-lg lg:max-w-none lg:-ml-16 xl:-ml-24"
           >
-            <motion.div
-              whileHover={prefersReduced ? {} : { rotateY: -3, rotateX: 1, scale: 1.015 }}
-              transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+            <div
               style={{
                 transformStyle: 'preserve-3d',
                 transform: 'perspective(1400px) rotateY(-6deg) rotateX(2deg)',
@@ -132,7 +120,7 @@ export default function Hero() {
               />
               {/* Subtle gradient overlay, darker on the left edge where it bleeds into text */}
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 via-transparent to-transparent pointer-events-none" />
-            </motion.div>
+            </div>
 
             {/* Floating rating badge */}
             <motion.div
